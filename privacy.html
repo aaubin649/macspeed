@@ -4,25 +4,34 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MacSpeed privacy policy</title>
+<link rel="icon" href="icon.png">
 <style>
-  :root { --bg: #ffffff; --text: #10151c; --muted: #5b6573; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #0d1117; --text: #e8edf3; --muted: #9aa5b3; } }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
-  main { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
-  h1 { font-size: 34px; letter-spacing: -0.01em; margin: 0 0 6px; }
-  h2 { font-size: 20px; margin: 32px 0 6px; }
-  p, li { color: var(--muted); }
-  a { color: inherit; }
+  :root { --bg: #fbfbfd; --text: #1d1d1f; --muted: #6e6e73; --faint: #86868b; --line: rgba(0,0,0,.08); --accent: #0071e3; --nav: rgba(251,251,253,.72); }
+  @media (prefers-color-scheme: dark) { :root { --bg: #000; --text: #f5f5f7; --muted: #a1a1a6; --faint: #6e6e73; --line: rgba(255,255,255,.1); --accent: #2997ff; --nav: rgba(0,0,0,.66); } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; letter-spacing: -0.012em; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { position: sticky; top: 0; background: var(--nav); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid var(--line); }
+  nav div { max-width: 680px; margin: 0 auto; padding: 0 24px; height: 52px; display: flex; align-items: center; }
+  .brand { display: flex; align-items: center; gap: 9px; color: var(--text); font-weight: 600; font-size: 16px; letter-spacing: -0.02em; }
+  .brand img { width: 24px; height: 24px; }
+  main { max-width: 680px; margin: 0 auto; padding: 72px 24px 96px; }
+  h1 { font-size: clamp(36px, 6vw, 48px); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 10px; }
+  .date { color: var(--faint); font-size: 14px; margin: 0 0 40px; }
+  h2 { font-size: 21px; letter-spacing: -0.02em; margin: 40px 0 8px; }
+  p { color: var(--muted); margin: 0; }
+  .short { font-size: 21px; line-height: 1.45; color: var(--text); padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  footer { border-top: 1px solid var(--line); padding: 28px 24px 44px; font-size: 12px; color: var(--faint); text-align: center; }
 </style>
 </head>
 <body>
+<nav><div><a class="brand" href="index.html"><img src="icon.png" alt="">MacSpeed</a></div></nav>
 <main>
-  <p><a href="index.html">← MacSpeed</a></p>
   <h1>Privacy policy</h1>
-  <p>Last updated November 4, 2026.</p>
+  <p class="date">Last updated November 4, 2026</p>
 
-  <h2>The short version</h2>
-  <p>MacSpeed doesn't collect, send or sell any of your data. Everything it measures stays on your Mac.</p>
+  <p class="short">MacSpeed doesn't collect, send or sell any of your data. Everything it measures stays on your Mac.</p>
 
   <h2>What MacSpeed reads</h2>
   <p>To find what's slowing your Mac, MacSpeed reads the list of running processes, memory, CPU, heat, battery and disk usage, your startup items, and the size of cache folders. Space Map and Duplicates read the folders you choose to scan. This information is used only to show you results on your Mac.</p>
@@ -40,7 +49,8 @@
   <p>This website has no cookies or analytics. The host may keep standard server logs, such as IP addresses, for security.</p>
 
   <h2>Contact</h2>
-  <p>Questions? Use the feedback link on the <a href="index.html">home page</a>.</p>
+  <p>Questions? <a href="https://github.com/aaubin649/macspeed/issues">Send feedback</a>.</p>
 </main>
+<footer>© 2026 MacSpeed</footer>
 </body>
 </html>
