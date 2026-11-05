@@ -168,7 +168,8 @@
   .plan li::before { content: ""; position: absolute; left: 2px; top: 6px; width: 10px; height: 5px; border-left: 2px solid var(--good); border-bottom: 2px solid var(--good); transform: rotate(-45deg); }
   .plan .btn { margin-top: auto; justify-content: center; }
   .plan.later { background: transparent; }
-  .plan.later .soon { margin-top: auto; font-size: 14px; color: var(--faint); }
+  .btn.ghost { background: transparent; color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent); }
+  .btn.ghost:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
 
   /* FAQ */
   .faq { max-width: 820px; }
@@ -399,14 +400,15 @@
         <a class="btn" href="https://github.com/aaubin649/macspeed/releases/latest/download/MacSpeed-Beta.dmg">Download the beta</a>
       </div>
       <div class="plan later">
-        <span class="tag">MacSpeed 1.0</span>
+        <span class="tag">MacSpeed Pro · early supporter</span>
         <div class="price">$24 <small>one time</small></div>
         <ul>
-          <li>Signed and notarized by Apple</li>
-          <li>Automatic updates</li>
+          <li>Unlocks MacSpeed 1.0 when it ships, signed and notarized by Apple</li>
+          <li>Every 1.x update included</li>
           <li>Two Macs, no subscription</li>
+          <li>Funds the Apple developer fee that removes the install warning</li>
         </ul>
-        <p class="soon">Coming later</p>
+        <a class="btn ghost" href="https://buy.polar.sh/polar_cl_afWkXTswScCkKuZzQ2yXJRDfDUtvoj4GbyGRT3DXtec">Buy MacSpeed Pro</a>
       </div>
     </div>
   </div>
@@ -419,6 +421,7 @@
       <details><summary>Is it safe?</summary><p>MacSpeed never deletes system files. Quitting an app asks it to save first. Disabled startup items are moved, not deleted, and come back with one click. Cache clearing only touches caches apps rebuild, and goes through the Trash.</p></details>
       <details><summary>Does it upload my data?</summary><p>No. Everything MacSpeed measures stays on your Mac. The only network request is a daily update check that sends nothing about you or your Mac, and you can turn it off. See the <a href="privacy.html">privacy policy</a>.</p></details>
       <details><summary>Why does macOS warn me when I open it?</summary><p>The beta isn't signed with an Apple developer certificate yet. MacSpeed 1.0 will be signed and notarized, and the warning goes away. Until then, follow the three install steps above.</p></details>
+      <details><summary>What do I get if I buy now?</summary><p>A MacSpeed Pro license key for 2 Macs, emailed right after checkout. Paste it into MacSpeed → Settings. The beta stays free for everyone; your key unlocks the signed 1.0 and every 1.x update, and pays for the Apple developer fee. Payments are handled by Polar, which also handles sales tax and refunds.</p></details>
       <details><summary>Why isn't it on the Mac App Store?</summary><p>App Store apps are sandboxed and can't see other apps' processes or startup items, which is the whole point of MacSpeed.</p></details>
       <details><summary>Will it make an old Mac feel new?</summary><p>If the slowness comes from memory pressure, runaway apps, heat or startup clutter, usually yes, and you'll see the measured difference. If your Mac is simply working at its limit, MacSpeed tells you that instead of selling you a fix.</p></details>
     </div>

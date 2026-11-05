@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thanks for buying MacSpeed Pro</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #f6f5f0; --text: #0d1f24; --muted: #52646a; --faint: #84918f; --line: rgba(13,31,36,.11); --accent: #0e5a63; --nav: rgba(246,245,240,.8); }
+  @media (prefers-color-scheme: dark) { :root { --bg: #071418; --text: #e8f1ee; --muted: #93a8a5; --faint: #5f7774; --line: rgba(232,241,238,.1); --accent: #5ee6b5; --nav: rgba(7,20,24,.78); } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.6 "Geist", -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing: -0.01em; -webkit-font-smoothing: antialiased; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { position: sticky; top: 0; background: var(--nav); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+  nav div { max-width: 680px; margin: 0 auto; padding: 0 24px; height: 52px; display: flex; align-items: center; }
+  .brand { display: flex; align-items: center; gap: 9px; color: var(--text); font-weight: 600; font-size: 16px; letter-spacing: -0.02em; }
+  .brand img { width: 24px; height: 24px; }
+  main { max-width: 680px; margin: 0 auto; padding: 72px 24px 96px; }
+  h1 { font-size: clamp(36px, 6vw, 48px); line-height: 1.08; letter-spacing: -0.04em; font-weight: 600; margin: 0 0 10px; }
+  .date { color: var(--faint); font: 500 12px/1 "Geist Mono", ui-monospace, monospace; text-transform: uppercase; letter-spacing: .1em; margin: 0 0 40px; }
+  h2 { font-size: 21px; letter-spacing: -0.02em; margin: 40px 0 8px; }
+  p { color: var(--muted); margin: 0; }
+  .short { font-size: 21px; line-height: 1.45; color: var(--text); padding: 24px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  footer { border-top: 1px solid var(--line); padding: 28px 24px 44px; font-size: 12px; color: var(--faint); text-align: center; }
+  ol { padding-left: 22px; color: var(--muted); }
+  li { margin: 10px 0; }
+  .btn { display: inline-block; margin-top: 28px; background: var(--accent); color: var(--bg); padding: 12px 22px; border-radius: 10px; font-weight: 500; }
+  .btn:hover { text-decoration: none; opacity: .9; }
+</style>
+</head>
+<body>
+<nav><div><a class="brand" href="index.html"><img src="icon.png" alt="">MacSpeed</a></div></nav>
+<main>
+  <h1>Thank you!</h1>
+  <p class="date">MacSpeed Pro</p>
+  <p class="short">Your purchase went through. Your license key is in the email from Polar and on Polar's order page.</p>
+
+  <h2>Activate it</h2>
+  <ol>
+    <li>Open MacSpeed. If you don't have it yet, <a href="https://github.com/aaubin649/macspeed/releases/latest/download/MacSpeed-Beta.dmg">download it here</a>.</li>
+    <li>In the menu bar, choose <b>MacSpeed › Settings</b> (or press ⌘,).</li>
+    <li>Paste your key under <b>MacSpeed Pro</b> and click <b>Activate</b>.</li>
+  </ol>
+  <p>Your key works on 2 Macs. To move it to a new Mac, click <b>Deactivate on This Mac</b> in Settings first.</p>
+
+  <h2>Something wrong?</h2>
+  <p>Can't find the key or it won't activate? <a href="https://github.com/aaubin649/macspeed/issues/new/choose">Open an issue</a> or reply to the receipt email. Refunds go through Polar.</p>
+
+  <a class="btn" href="index.html">Back to MacSpeed</a>
+</main>
+<footer>© 2026 MacSpeed</footer>
+</body>
+</html>
